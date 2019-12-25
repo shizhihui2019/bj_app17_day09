@@ -1,0 +1,81 @@
+# 使用缩进表示层级关系 只要相同层级的元素左侧对齐即可 -->同一级缩进一样
+# yaml编写时,冒号后必须加空格,返回数据类型是字典
+#name: "lili"
+#Name: "haha"
+
+
+# ---对象---
+#value1: {"name":"张三"}   # 支持pthon数据类型
+#value2: 张三  # 支持自动转换数据类型
+#value3:         # 多层级关系系
+#  name1: "张三"
+#  name2: "李四"
+
+
+# ---数组----
+# yaml文件数组格式
+#value4:
+#  - 1    # 1后边必须加空格
+#  - 2
+
+# ----python数组类型-----
+#value5: [1,2,3]
+
+# ---字典 套 列表 套 字典-----
+#value6:
+#  - name: "lili"
+#  - address: "TBD"
+#  - name: "lili"
+
+
+# ---纯量----
+# 布尔
+#value7: true  # yaml文件支持
+#value8: false # yaml文件支持
+
+#value9: True  # python数据类型
+#value10: False # python数据类型
+# 整数 浮点数
+#value11: 122
+#value12: 12.000001
+# ---特殊--- 了解,但不要用
+#valuex: no
+#valuey: yes
+
+# 空
+value13: ~ # yaml 空
+value16:      # 没有任何内容 支持
+value17: null  # 支持
+value18: Null   # 支持
+
+value14: None # python数据 不支持
+value15: none # python数据 不支持
+value19: ""   # python数据 不支持
+
+# 日期
+value20: 2020-12-25 12:45:45  # 返回值 datatime.datatime
+value21: 2020-12-25  # 返回值 datatime.data
+value22: 12:45:45  # 返回整数,不能使用
+
+value23: 2020-12-25 02:05:05  # 如果是个位数,一定要补0
+value24: 2020-02-25  # 如果是个位数,一定要补0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

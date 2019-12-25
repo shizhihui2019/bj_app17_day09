@@ -1,0 +1,11 @@
+info: &data
+  name: "lili"
+  phone: "18722024314"
+
+
+address:
+  <<: *data
+  detail: "TBD 10ceng"
+
+
+
